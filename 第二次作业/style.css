@@ -41,7 +41,7 @@ h1 {
 	max-height: 150%;
 	z-index: 2;
 }
-.jar-walls {
+/*.jar-walls {
 	height: 80%;
 	width: 60%;
 	background: #d1e1df;
@@ -72,8 +72,39 @@ h1 {
 	bottom: 0%;
 	left: 25%;
 	opacity: 0.7;
+}*/
+.jar-walls {
+    height: 70%; /* 降低高度 */
+    width: 70%; /* 增加宽度 */
+    background: linear-gradient(to bottom, #d1e1df, #b6d4d2); /* 使用渐变背景 */
+    border-radius: 1.5rem; /* 增加边框圆角 */
+    position: absolute;
+    bottom: 1%; /* 提高底部位置 */
+    left: 15%; /* 调整左侧位置 */
+    opacity: 0.6; /* 适度降低不透明度 */
+    z-index: 1;
 }
 
+.jar-top {
+    width: 60%; /* 减少宽度 */
+    height: 3%; /* 减少高度 */
+    background: linear-gradient(to bottom, #d1e1df, #b6d4d2); /* 使用相同的渐变背景 */
+    position: absolute;
+    bottom: 72%; /* 提高底部位置 */
+    left: 20%; /* 调整左侧位置 */
+    opacity: 0.8; /* 提高不透明度 */
+    z-index: 1;
+}
+
+.jar-bottom {
+    width: 60%; /* 减少宽度 */
+    height: 1%; /* 不变高度 */
+    background: linear-gradient(to bottom, #d1e1df, #b6d4d2); /* 使用相同的渐变背景 */
+    position: absolute;
+    bottom: 0%; /* 不变底部位置 */
+    left: 20%; /* 调整左侧位置 */
+    opacity: 0.8; /* 提高不透明度 */
+}
 .dirt {
 	width: 60%;
 	height: 5%;
@@ -85,3 +116,24 @@ h1 {
 	opacity: 0.7;
 	z-index: -1;
 }
+.jar-glossy-long, .jar-glossy-short {
+	position: absolute;
+	background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0) 100%);
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+  
+  .jar-glossy-long {
+	width: 60px;
+	height: 120px;
+	left: 70px; /* 调整位置以适应你的容器 */
+	top: 40px; /* 调整位置以适应你的容器 */
+  }
+  
+  .jar-glossy-short {
+	width: 40px;
+	height: 60px;
+	left: 100px; /* 调整位置以适应你的容器 */
+	top: 70px; /* 调整位置以适应你的容器 */
+  }
+
